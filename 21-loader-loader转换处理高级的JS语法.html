@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 6. 打包处理js 文件中的高级语法webpack 只能打包处理一部分高级的JavaScript 语法。对于那些webpack 无法处理的高级js 语法，需要借助于babel-loader进行打包处理。例如webpack 无法处理下面的JavaScript 代码：
+    
+    
+    
+    6.1 安装babel-loader 相关的包运行如下的命令安装对应的依赖包：npm  i  babel-loader@8.2.2 @babel/core@7.14.6 @babel/plugin-proposal-decorators@7.14.5 -D在webpack.config.js 的module-> rules数组中，添加loader 规则如下：
+
+
+    rules: [
+    {
+        test: /\.js$/,
+        use: [babel-loader],
+        注意，必须使用 exclude 指定排除项， 因为 node_modules 目录下的 第三方包 不需要被 打包。
+        exclude: /node_modules/
+    }]
+
+
+
+    6.2 配置babel-loader在项目根目录下，创建名为babel.config.js 的配置文件，定义Babel 的配置项如下：
+
+
+    module.exports = {
+        //声明 babel 可用的插件
+        plugins: 
+    }
+
+
+
+
+    详情请参考Babel 的官网https://babeljs.io/docs/en/babel-plugin-proposal-decorators
+
+    -->
+
+
+
+</body>
+</html>

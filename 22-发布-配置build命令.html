@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 打包发布
+    
+    发布： 前段把项目文件生成最终的结果，把生成好的文件夹的所有内容打包 发给 后端。 后端 部署上线。 内存里的文件 需要 生成到 实际的 物理磁盘上， 才可以 找到 这些文件。 发给后端。 -->
+
+
+    <!-- 1. 为什么要打包发布项目开发完成之后，需要使用webpack 对项目进行打包发布，主要原因有以下两点：①开发环境下，打包生成的文件存放于内存中，无法获取到最终打包生成的文件②开发环境下，打包生成的文件不会进行代码压缩和性能优化为了让项目能够在生产环境中高性能的运行，因此需要对项目进行打包发布。 -->
+
+
+
+    <!-- 2. 配置webpack 的打包发布在package.json 文件的scripts节点下，新增build 命令如下：
+        "scripts": {
+            "dev": "webpack serve",// 开发环境中， 运行 dev 命令
+            "build": "webpack --mode production" // 项目发布时， 运行 build 命令（npm run build ）
+        }
+        
+        
+        --mode 是一个参数项，用来指定webpack 的运行模式。production 代表生产环境，会对打包生成的文件进行代码压缩和性能优化。注意：通过--mode 指定的参数项，会覆盖webpack.config.js 中的mode 选项。 -->
+
+
+
+        <!-- dist打包好之后，弄成一个压缩包发给后端，后端会把这个dist发到公司的服务器上（具体怎么发布到服务器上就是后端的事了，前端不需要关心。），然后全球都可以访问了。 -->
+
+        <!-- 开发阶段用npm run dev ， 发布阶段用 npm run build  -->
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Source Map
+    
+    
+    
+    1. 生产环境遇到的问题 前端项目在投入生产环境之前，都需要对JavaScript 源代码进行压缩混淆，从而减小文件的体积，提高文件的加载效率。此时就不可避免的产生了另一个问题：对压缩混淆之后的代码除错（debug）是一件极其困难的事情⚫变量被替换成没有任何语义的名称⚫空行和注释被剔除
+
+
+
+    2. 什么是Source Map Source Map 就是一个信息文件，里面储存着位置信息。也就是说，Source Map 文件中存储着压缩混淆后的代码，所对应的转换前的位置。有了它，出错的时候，除错工具 将直接 显示 原始 代码，而 不是 转换后的 代码，能够极大的方便后期的调试。
+
+
+
+    3. webpack 开发环境下的Source Map在开发环境下，webpack 默认启用了Source Map 功能。当程序运行出错时，可以直接在控制台提示错误行的位置，并定位到具体的源代码：
+
+
+
+    3.1 默认Source Map 的问题 开发环境下默认生成的Source Map，记录的是 生成后 的代码的位置。会导致 运行时 报错的行数 与 源代码 的行数 不一致 的问题。示意图如下：
+
+
+
+
+    3.2 解决默认Source Map 的问题开发环境下，推荐在webpack.config.js 中添加如下的配置，即可保证运行时报错的行数与源代码的行数保持一致：
+
+
+    module.exports = {
+        mode: 'development',
+        // eval-source-map 仅限在"开发模式" 下 使用， 不建议在 “生产模式” 下 使用。
+        // 此选项生成的 Source Map 能够保证 “运行时报错的行数” 与 “源代码的行数” 保持一致。
+        devtool: 'eval-source-map'
+    }
+
+-->
+
+</body>
+</html>

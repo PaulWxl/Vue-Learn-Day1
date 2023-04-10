@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3. 把JavaScript 文件统一生成到js 目录中在webpack.config.js 配置文件的output节点中，进行如下的配置：
+    
+    output； {
+        path: path.join(__dirname, 'dist'),
+        // 明确告诉 webpack 把生成的 bundle.js 文件存放到 dist 目录下的 js 子目录中
+        filename: 'js/bundle.js'
+    }
+    -->
+
+
+
+    <!-- 4. 把图片文件统一生成到image 目录中修改webpack.config.js 中的url-loader配置项，新增outputPath选项即可指定图片文件的输出路径：
+    
+    {
+        test: /\.jpg|png|gif$/,
+        use: 'url-loader?limit=22229&outputPath=images'//多个参数 用 & 符 连接。
+    }
+
+
+    // 每次 重新 打包 生成 之前，（npm run build ）, 最好都把 dist 先删掉， 免得 分不清。
+    -->
+
+
+</body>
+</html>

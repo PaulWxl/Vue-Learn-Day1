@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        5. 自动清理dist 目录下的旧文件为了在每次打包发布时自动清理掉dist 目录中的旧文件，可以安装并配置clean-webpack-plugin插件:
+
+        // 1. 安装清理 dist 目录的 webpack 插件
+        npm install clean-webpack-plugin@3.0.0 -D
+        
+        // 2. 按需导入插件，得到插件的构造函数之后，创建构造函数的实例对象
+        // 这里用的是es6的 对象 的 解构赋值
+        const { CleanWebpackPlugin } =  require('clean-webpack-plugin')
+        const cleanPlugin = new CleanWebpackPlugin()
+        //这些不会的话，可以在npm官方网站'https://www.npmjs.com/'中看文档是怎么写的。
+
+        // 3. 把创建的 cleanPlugin 插件实例对象， 挂载到plugins 节点中
+        plugins: [htmlPlugin, cleanPlugin]
+     -->
+</body>
+</html>
